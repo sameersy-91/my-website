@@ -7,8 +7,8 @@ I help software teams write documentation their users actually read.
 
 **Samples:** 
 
-- [API Reference](./api-docs/sample-api.md) 
-- [Getting Started Guide](./product-docs/getting-started.md) 
+- [API Reference](/api-docs/sample-api.md) 
+- [Getting Started Guide](/product-docs/getting-started.md) 
 
 **Contact:** sameersyed91@gmail.com | [LinkedIn](https://www.linkedin.com/in/syed-sameer-05b9b653)
 
