@@ -1,22 +1,48 @@
-name: Documentation request
-about: Request new or updated documentation
-labels: documentation
----
- 
-## What needs to be documented?
- 
-<!-- Describe the feature, API, or process that needs docs -->
- 
-## Who is the audience?
- 
-[ ] End users
-[ ] Developers / API consumers
-[ ] Internal team
- 
-## What is the deadline or release date?
- 
-## Links to relevant code or PRs
- 
-## Existing documentation to update (if any)
- 
-## Additional context
+name: Documentation issue
+description: Report missing, incorrect, or unclear documentation
+title: "[Docs]: "
+labels:
+  - documentation
+body:
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue type
+      options:
+        - Incorrect information
+        - Missing information
+        - Unclear content
+        - Broken link
+        - Typo or formatting issue
+        - Documentation request
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: Documentation page
+      description: Provide the URL or path to the affected documentation.
+      placeholder: https://docs.example.com/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Describe the issue
+      description: Explain what is incorrect, missing, or unclear.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected documentation
+      description: Describe what you expected the documentation to say or include.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add screenshots, examples, logs, or other relevant information.
