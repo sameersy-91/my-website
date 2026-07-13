@@ -1,5 +1,3 @@
-Example: .github/ISSUE_TEMPLATE/doc-request.md
----
 name: Documentation request
 about: Request new or updated documentation
 labels: documentation
